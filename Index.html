@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sky Travel</title>
+    <link rel="stylesheet" href="/Code/basic.css">
+    <link rel="stylesheet" href="/Code/nav.css">
+    <link rel="stylesheet" href="/Code/hero-sec.css">
+    <link rel="stylesheet" href="/Code/sec-2.css">
+    <link rel="stylesheet" href="/Code/sec-3.css">
+    <link rel="stylesheet" href="/Code/sec-4.css">
+    <link rel="stylesheet" href="/Code/footer.css">
+    <link rel="stylesheet" href="/Code/hamburger-menu.css">
+    <link rel="stylesheet" href="/Code/responsive.css">
+    <!-- <link rel="stylesheet" href="/scroll-watcher.css"> -->
+<link href="/Code/swiper-bundle.min.css" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"> -->
+    </script>
+</head>
+
+<body>
+<!-- 
+    <div class="scroll-watcher">
+        fw
+    </div> -->
+    <nav>
+        <div class="logo">
+            <img src="Assets/logo.svg" alt="">
+        </div>
+        <ul id="menuList">
+            <li><a href="#">
+                    <div class="li-style">Home</div>
+                </a></li>
+
+            <li><a href="#">
+                    <div class="li-style">About</div>
+                </a></li>
+
+            <li><a href="#">
+                    <div class="li-style">Services</div>
+                </a></li>
+
+            <li><a href="#">
+                    <div class="li-style">Product</div>
+                </a></li>
+
+            <li><a href="#">
+                    <div class="li-style">Contact</div>
+                </a></li>
+
+        </ul>
+
+        <div class="icon-container">
+            <li id="icon">
+                <i-cart class="fa-solid fa-cart-shopping"></i>
+            </li>
+            <li id="icon">
+                <i-search class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li id="menu-icon">
+                <i-menu class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </li>
+        </div>
+
+
+
+    </nav>
+
+    <div class="text-window">
+
+        <!-- <div class="box">
+            <div class="parts part1">
+
+                <i class="fa-solid fa-compass"></i>
+                <p>Where to?</p>
+
+            </div>
+            <div class="parts part2">
+
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>Months</p>
+
+            </div>
+            <div class="parts part3">
+
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Travel type</p>
+            </div>
+
+            <div class="find-btn">
+                <p>FIND NOW</p>
+            </div>
+
+        </div> -->
+
+        <div class="overlay"> </div>
+
+        <p class="text1">LET US TAKE YOU TO YOUR DREAM DESTINATION!</p>
+        <p class="animated-text">Relax and Enjoy</p>
+
+
+
+    </div>
+
+    <div class="sec-2-container">
+        <h1>TOP 5 VISITED PLACES</h1>
+        <div class="overlay-sec-2"></div>
+        <div class="image-sec">
+            <div class="images img1">
+                <img src="Assets/place-img1.jpg" alt="">
+                <div class="content">
+                    <h1>Venice</h1>
+                    <p>"Discover Venice's beautiful canals and charming buildings. A city full of magic."</p>
+                </div>
+            </div>
+            <div class="images img2">
+                <img src="Assets/place-img2.jpg" alt="">
+                <div class="content">
+                    <h1>Machu Picchu</h1>
+                    <p>"Visit Machu Picchu, the ancient mountain city of the Incas in Peru."</p>
+                </div>
+            </div>
+            <div class="images img3">
+                <img src="Assets/place-img3.jpg" alt="">
+                <div class="content">
+                    <h1>Barcelona</h1>
+                    <p>"Enjoy Barcelona’s lively streets, stunning buildings, and rich culture."</p>
+                </div>
+            </div>
+            <div class="images img4">
+                <img src="Assets/place-img4.jpg" alt="">
+                <div class="content">
+                    <h1>Eiffel Tower</h1>
+                    <p>"See the famous Eiffel Tower, a symbol of Paris and its beauty."</p>
+                </div>
+            </div>
+            <div class="images img5">
+                <img src="Assets/place-img5.jpg" alt="">
+                <div class="content">
+                    <h1>Colosseum </h1>
+                    <p>"Explore the Colosseum in Rome, where ancient history and grand architecture meet." </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+
+
+    <section class="sec-3-container">
+        <h2>OUR CLIENTS REVIEWS</h2>
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="Assets/girl.webp" alt="" class="image" />
+                    <div class="testi-text">
+                    <p>
+                        Thanks to Sky Travel, our trip was incredible! Their personalized service and expert recommendations made everything seamless. Highly recommend for unforgettable travel experiences!
+                    </div>
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Sarah Johnson</span>
+                        <span class="job">Software Engineer</span>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="Assets/man1.jpg" alt="" class="image" />
+                    <p>
+                        Amazing experience with Sky Travel They handled every detail, making our trip stress-free and unforgettable. Highly recommend their services!
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Liam Patel</span>
+                        <span class="job">Fitness Trainer</span>
+                    </div>
+                </div>
+
+
+                <div class="slide swiper-slide">
+                    <img src="/Assets/man2.jpg" alt="" class="image" />
+                    <p>
+                        We had a fantastic trip thanks to Sky Travel! Their team was attentive and created an itinerary that was perfect for us. Would book again in a heartbeat!
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Noah Thompson</span>
+                        <span class="job">Photographer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="/Assets/man3.jpg" alt="" class="image" />
+                    <p>
+                        Outstanding service from Sky Travel! They truly understand travel and made our journey smooth and enjoyable. Can’t wait to plan our next adventure with them!"
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">David Clark</span>
+                        <span class="job">Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <div class="sec-4-cont">
+      <div class="overlay-sec-4"> </div>
+    <div class="text-cont">
+        <h3>Go & Discover</h3>
+        <h1>Breathtaking Cities</h1>
+        <p>Plan your perfect trip with Sky Travel—your gateway to unforgettable adventures, seamless bookings, and exclusive deals for every destination!</p>
+    </div>
+        <video autoplay loop src="Assets/sec-4-video.mp4">
+    </div>
+
+    
+<div class="footer">
+    <form action="action_page.php" id="myForm" style="border:1px solid #ccc">
+      <div class="container">
+        <h1>FILL THIS FORM!</h1>
+        <p class="text">To explore the world</p>
+
+        <!-- <label for="Name"><b>Name</b></label> -->
+        <input type="text" placeholder="Enter Your Name" name="name" required>
+          
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+          <!-- <label for="phone"><b>Mobile Number</b></label> -->
+          <input 
+              type="tel" 
+              placeholder="Enter Mobile Number" 
+              name="phone" 
+              pattern="[0-9]{10}" 
+              maxlength="10" 
+              required>
+
+
+        <p>Please Submit your details carefully! <a href="#" style="color:red">Terms & Privacy</a></p>
+
+        <div class="btn-cont">
+          <button type="button" id="cancel-btn" class="cancelbtn">Cancel</button>
+          <button type="submit" class="submitbtn">Submit</button>
+        </div>
+      </div>
+    </form>
+</div>
+    
+    <!-- Swiper JS -->
+    <script src="/Code/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="/Code/script-for-swiper.js"></script>
+</body>
+
+</html>
+
+
+<script>
+    let menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+            menuList.style.maxHeight = "350px";
+            pad
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+<script>
+    // Get references to the form and cancel button
+    const form = document.getElementById('myForm');
+    const cancelBtn = document.getElementById('cancel-btn');
+  
+    // Add click event listener to the cancel button
+    cancelBtn.addEventListener('click', () => {
+      // Reset the form to clear all fields
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>

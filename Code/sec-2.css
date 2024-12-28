@@ -1,0 +1,141 @@
+.sec-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Fallback color */
+    position: relative;
+    padding: 5%;
+  
+    /* The image used */
+    background-image: url("sec-4-bgimg.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: auto; /* Keep height auto for dynamic content */
+  }
+  
+  .overlay-sec-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; /* This will fill the container's height */
+    background: rgb(33 207 200); /* Optional: adds a tint */
+    backdrop-filter: blur(5px); /* Adjust the blur intensity */
+    z-index: 1; /* Set to a positive value to be above the background */
+  }
+  
+  
+  h1{
+    z-index: 2;
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    width: 105.5;
+    
+  }
+  
+  .image-sec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .images {
+    /* border: 2px solid black; */
+    min-width: 30%;
+    /* Adjust as needed */
+    margin: 20px;
+    /* Ensure sufficient margin */
+    aspect-ratio: 1 / 1;
+    /* Square aspect ratio */
+    position: relative;
+    box-sizing: border-box;
+    /* Include border in width calculation */
+    border-radius: 20px;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  
+  .images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Poppins;
+  }
+  
+  .content:hover {
+    opacity: 1;
+  }
+  
+  .content h1 {
+    font-size: 42px;
+    color: #00ff84;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 21px;
+    font: bold;
+    color: #fff;
+  }
+  
+  .content>* {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  
+  .content:hover>* {
+    transform: translateY(0px);
+  }
+  
+  @keyframes appear {
+    from {
+      scale: 0.5;
+      opacity: 0;
+    }
+  
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+  
+  .bg {
+    background-color: #30a2a6;
+    width: 100%;
+    height: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }

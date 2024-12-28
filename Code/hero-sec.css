@@ -1,0 +1,196 @@
+.text-window {
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3vh;
+    position: relative;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: 4px 7px 10px 0px rgb(162, 160, 160, 0.5);
+    background-attachment: fixed;
+  }
+  
+  
+  
+  .text-window::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/hero-sec-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    z-index: -1;
+    animation: zoomInOut 13s infinite, bg-change 13s infinite;
+    background-attachment: fixed;
+  }
+  
+  /* Keyframes for zoom animation */
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1.3);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.3);
+    }
+  }
+  
+  /* Keyframes for background image change */
+  @keyframes bg-change {
+  
+    0%,
+    48% {
+      background-image: url(/Assets/hero-sec-img1.jpg);
+    }
+    
+  49%,
+  100% {
+      background-image: url(/Assets/hero-sec-img2.jpg);
+    }
+  }
+  
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1)
+  }
+  
+  .box {
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    z-index: 3;
+    bottom: -8%;
+    display: flex;
+    box-shadow: 4px 7px 20px 0px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+  }
+  
+  .parts {
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  .parts p {
+    font-size: 4rem;
+    color: gray;
+    margin-left: 14px;
+  }
+  
+  .parts i {
+    font-size: 4rem;
+    color: gray;
+    margin-left: 20px;
+  }
+  
+  .part2 {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+  }
+  
+  .find-btn {
+    background-color: #56f0f5;
+    font-family: Poppins;
+    width: 25%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .find-btn:hover {
+    background-color: #30a2a6;
+    cursor: pointer;
+    animation: hover-ani 0.5s ease-in-out;
+  }
+  
+  .find-btn:not(:hover) {
+    animation: not-hover-ani 0.5s ease-in-out;
+  }
+  
+  @keyframes hover-ani {
+    0% {
+      background-color: #56f0f5;
+    }
+  
+    100% {
+      background-color: #30a2a6;
+    }
+  }
+  
+  @keyframes not-hover-ani {
+    0% {
+      background-color: #30a2a6;
+    }
+  
+    100% {
+      background-color: #56f0f5;
+    }
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 5.5rem;
+    animation: blurInTop 2s ease-in-out;
+    /* Ensure position for cursor */
+    z-index: 2;
+    font-family: Poppins;
+  }
+  
+  
+  .animated-text {
+    /* font-size: 20rem; */
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0ch;
+    z-index: 2;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    align-items: center;
+    animation: wipe 7s infinite;
+    font-family: Poppins;
+    color: white;
+  }
+  
+  @keyframes wipe {
+    0% {
+      width: 0ch
+    }
+  
+    75% {
+      width: 25ch;
+    }
+  
+    95% {
+      width: 0ch;
+    }
+  
+    100% {
+      width: 0ch;
+    }
+  }

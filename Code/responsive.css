@@ -1,0 +1,362 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+ 
+  
+  sec-1 .text1 {
+      font-size: clamp(4rem, 3vw + 1.5rem, 10rem);
+    }
+  
+    .animated-text {
+      font-size: clamp(7rem, 1.5vw + 6rem, 10rem);
+    }
+  
+    sec-2 .text-window {
+      background-attachment: fixed;
+    }
+  
+    .text-window::before {
+      background-attachment: fixed;
+    }
+  
+    .sec-2-container>h1 {
+      font-size: clamp(2rem, 1vw + 7rem, 30rem);
+      margin-top: 4%;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    .images {
+      min-width: 90%;
+      height: 40%;
+      aspect-ratio: 1 / 1;
+      /* Aspect ratio: 1:1 */
+      border-radius: 20px;
+    }
+  
+    .images img {
+      border-radius: 20px;
+      padding: 10px;
+    }
+  
+    .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.6s;
+    }
+  
+    .content:hover {
+      opacity: 1;
+    }
+  
+    .content h1 {
+      font-size: 42px;
+      color: #00ff84;
+      margin-bottom: 10px;
+    }
+  
+    .content p {
+      font-size: 21px;
+      font-style: bold;
+      color: #fff;
+    }
+  
+    .content>* {
+      transform: translateY(25px);
+      transition: transform 0.6s;
+    }
+  
+    .content:hover>* {
+      transform: translateY(0px);
+    }
+  
+    /* sec-3  */
+  
+    .sec-3-container h2{
+      font-size: clamp(2rem, 1vw + 7rem, 30rem);
+    }
+  
+    .slide p {
+      font-size: clamp(0.5rem, 1vw + 2rem, 30rem);
+    }
+  
+    .details .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    .testi-text{
+      width: auto;
+      height: auto;
+      padding: 8px;
+    }
+  
+    /* sec-4 */
+  
+    .sec-4-cont {
+      /* The image used */
+      background-image: url("/Assets/sec-4-bgimg.jpg");
+  
+      /* Set a specific height */
+      width: 100vw;
+      height: 750px;
+    }
+  
+    .sec-4-cont video{
+      bottom: 10%;
+      width: 75%;
+    }
+    
+    .sec-4-cont h3{
+      font-size:clamp(4rem, 1.5vw + 5rem, 8rem) ;
+    }
+
+    .sec-4-cont h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: clamp(20px, 40px, 50px);
+    }
+  
+    .sec-4-cont p {
+        font-size: clamp(5px, 13px, 20px);
+    }
+  
+    .sec-4-cont video {
+       top: 45%;
+       width: 75%;
+    }
+  
+    /* footer */
+
+    input[type=text],
+input[type=password],
+input[type=tel]{
+    width: 96%;
+}
+  
+    .text {
+      font-size: clamp(0px, 28px, 25px);
+    }
+  
+   .cancelbtn {
+      width: 30%;
+      }
+  
+    .submitbtn {
+      width: 30%;
+      }
+  } 
+
+
+  /* Tablets */
+
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* navbar */
+
+    #icon i-cart ,   #icon i-search ,   #menu-icon i-menu  {
+      font-size: 4.3rem;
+    }
+
+  nav ul{
+    gap: 18px;
+  }
+
+  /* sec-1 */
+
+  .animated-text {
+    font-size: clamp(4rem, 1.5vw + 6rem, 8rem);
+  }
+
+  h1 {
+    font-size: clamp(4rem, 1.5vw + 6rem, 8rem);
+}
+
+ /* sec-2 */
+
+ .images{
+  width: 40%;
+ }
+
+  /* sec-3 */
+
+  .slide p{
+    font-size: 16px;
+  }
+
+  .details .name{
+    font-size: 18px;
+  }
+
+  .details .job{
+    font-size: 14px;
+  }
+
+   /* sec-4*/
+
+  .sec-4-cont h3{
+    font-size:clamp(4rem, 1.5vw + 6rem, 8rem) ;
+   }
+
+   .sec-4-cont h1{
+    margin-top: 10px;
+   }
+
+  .sec-4-cont p{
+    font-size: 3.5rem;
+   }
+
+   .sec-4-cont video{
+    bottom: 20%;
+   }
+
+/* footer */
+   .cancelbtn {
+    width: auto;
+    }
+
+  .submitbtn {
+    width: auto;
+    }
+
+  }
+  
+/* Desktops */
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    
+    /* nav */
+
+    nav ul{
+      gap: 40px;
+    }
+
+      /* sec-1 */
+
+  .animated-text {
+    font-size: clamp(4rem, 1.5vw + 7rem, 12rem);
+  }
+
+  h1 {
+    font-size: clamp(4rem, 1.5vw + 7rem, 9rem);
+}
+
+ /* sec-2 */
+
+ .images{
+  width: 40%;
+ }
+
+   /* sec-3 */
+
+   .slide p{
+    font-size: 17px;
+  }
+
+  .details .name{
+    font-size: 18px;
+  }
+
+  .details .job{
+    font-size: 14px;
+  }
+
+   /* sec-4*/
+
+   .sec-4-cont h3{
+    font-size:clamp(4rem, 1.5vw + 6rem, 8rem) ;
+   }
+
+   .sec-4-cont h1{
+    margin-top: 10px;
+   }
+
+  .sec-4-cont p{
+    font-size: 3.5rem;
+   }
+
+   .sec-4-cont video{
+    bottom: 20%;
+   }
+
+   /* footer */
+
+   p{
+    font-size: 4rem;
+   }
+
+  }
+
+  @media (min-width: 1201px) {
+
+  /* nav */
+  .icon-container {
+    margin-right: 8px;
+  }
+
+  /* sec-1 */
+
+  .animated-text {
+    font-size: clamp(4rem, 1.5vw + 7rem, 10rem);
+  }
+
+  h1 {
+    font-size: clamp(4rem, 1.5vw + 7rem, 9.5rem);
+}
+
+ /* sec-2 */
+
+ .images{
+  width: 40%;
+ }
+
+  /* sec-3 */
+
+  .slide p{
+      font-size: 17px;
+    }
+  
+  .details .name{
+      font-size: 18px;
+    }
+  
+  .details .job{
+      font-size: 14px;
+    }
+
+      /* sec-4*/
+
+   .sec-4-cont h3{
+    font-size:clamp(4rem, 1.5vw + 6rem, 8rem) ;
+   }
+
+   .sec-4-cont h1{
+    margin-top: 10px;
+   }
+
+  .sec-4-cont p{
+    font-size: 3.8rem;
+   }
+
+   .sec-4-cont video{
+    bottom: 11%;
+    max-width: 50%;
+   }
+
+   /* footer */
+
+   p{
+    font-size: 4rem;
+   }
+
+  }
+  

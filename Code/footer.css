@@ -1,0 +1,152 @@
+.footer {
+    width: 100vw;
+    height: 40vh;
+    background-color: #3a3636;
+    color: white;
+    /* Ensure text is visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center content vertically */
+    position: sticky;
+    /* margin-top: ; */
+
+}
+
+
+.container {
+    padding: 16px;
+    width: 100vw;
+    background-color: rgb(33 207 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > h1 {
+    font-size: 8rem;
+}
+
+.text {
+    font-size: 7rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password],
+input[type=tel]{
+    width: 80%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-size: 4rem;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus{
+    background-color: #e0e0e0;
+    outline: 2px solid #514d4d;
+}
+
+b {
+    color: #343232;
+    font-size: 2rem;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.remember-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.remember-checkbox input {
+    margin-bottom: 0;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.btn-cont {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Extra styles for the submit button */
+.submitbtn {
+    padding: 14px 20px;
+    background-color: #18a047;
+    width: 10%;
+    margin: 2%;
+    border-radius: 20px;
+    font-size: 3rem;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    width: 10%;
+    margin: 2%;
+    border-radius: 20px;
+    font-size: 3rem;
+}
+
+.submitbtn:hover {
+    background-color: #36ab5f;
+}
+
+.cancelbtn:hover {
+     background-color: #dd635a;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+

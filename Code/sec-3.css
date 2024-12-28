@@ -1,0 +1,140 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sec-3-container {
+  padding: 16px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(33 207 200);
+}
+
+.sec-3-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 8.5rem;
+  margin-top: 4vh;
+  animation: appear ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 43%;
+  color: white;
+  text-align: center;
+}
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+  animation: appear ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 43%;
+  color: white;
+}
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  clip-path: circle();
+
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #011241;
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  clip-path: circle();
+  transform: translateY(30px);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 10px;
+  color: #011241;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #011241;
+}
+
+
+
+@keyframes appear {
+  from {
+    scale: 0.5;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}

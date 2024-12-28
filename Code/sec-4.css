@@ -1,0 +1,99 @@
+.sec-4-cont {
+    /* The image used */
+    background-image: url("/Assets/sec-4-bgimg.jpg");
+  
+    /* Set a specific height */
+    width: 100vw;
+    height: 1000px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sec-4-cont video{
+    position: absolute;
+    width: 75%;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    z-index: 1;
+    margin-bottom: 100px;
+    border-radius: 20px;
+  }
+  
+  
+  .sec-4-cont {
+  
+  h3{
+     color: white;
+     /* font-size: 6rem; */
+     font-family: "Poppins", sans-serif;
+  }
+   h1{
+     color: white;
+     font-size: 12rem;
+     /* margin-top: 20px; */
+     font-family: "Poppins", sans-serif;
+   }
+    
+  p{
+       color: white;
+       /* font-size: 3rem; */
+       font-family: "Poppins", sans-serif;
+     }
+  }
+  
+  .overlay-sec-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  
+  .text-cont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    position: absolute;
+    top: 5%;
+    animation: appear-text ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+  
+  @keyframes appear-text{
+    from{
+      opacity: 0;
+    }
+  
+    to{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear{
+    from{
+      scale: 0.3;
+      opacity: 0;
+    }
+  
+    to{
+      scale: 1;
+      opacity: 1;
+    }
+  }
+  

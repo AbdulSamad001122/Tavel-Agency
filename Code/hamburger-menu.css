@@ -1,0 +1,58 @@
+/* mediaquery for hamburger menu */
+
+@media (max-width: 768px) {
+  .li-style {
+    color: rgb(0, 0, 0);
+  }
+
+  .li-style:hover {
+    color: rgb(33 207 200);
+
+  }
+
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: rgb(222, 222, 222);
+      gap: 0;
+      overflow: hidden;
+    }
+
+    li{
+      border-top: 1.8px solid #5757572e;
+      width: 100%;
+    }
+  
+    nav ul li {
+      padding: 15px;
+      /* padding-top: 5px; */
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+  #menu-icon i {
+    color:black;
+    font-size:7rem;
+  }
+  
+  #icon i-menu{
+    display: none;
+  }
+
+  #icon i-cart ,  #icon i-search{
+    display: none;
+  }
+    
+    #menuList {
+      max-height: 0;
+      /* Collapse menu initially */
+      transition: max-height 0.5s ease-in-out;
+      /* Add transition */
+    }
+  }
